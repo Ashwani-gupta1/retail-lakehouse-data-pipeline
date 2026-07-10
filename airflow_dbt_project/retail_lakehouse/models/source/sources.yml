@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: retail_source
+    database: retail_analytics
+    schema: bronze
+
+    tables:
+      - name: orders
+      - name: customers
+      - name: products
+      - name: order_items
+      - name: stores
+      - name: employees

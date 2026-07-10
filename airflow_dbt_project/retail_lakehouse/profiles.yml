@@ -1,0 +1,11 @@
+retail_lakehouse:
+  outputs:
+    dev:
+      type: databricks
+      catalog: "{{ env_var('DATABRICKS_CATALOG', 'retail_analytics') }}"
+      schema: "{{ env_var('DBT_SCHEMA', 'dbt_schema') }}"
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      threads: 4
+  target: dev
