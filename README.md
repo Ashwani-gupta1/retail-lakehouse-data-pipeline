@@ -1,2 +1,5 @@
-# retail-lakehouse-data-pipeline
-Scalable retail analytics pipeline implementing Medallion Architecture, SCD Type 2, incremental loading and STAR Schema.
+# WALMART DATA ENGINEERING PROJECT
+
+- Watch The Full Video On YouTube - https://youtu.be/ZEE-jNAthB0?si=ABQX_ApyBbGDD5SZ
+
+
