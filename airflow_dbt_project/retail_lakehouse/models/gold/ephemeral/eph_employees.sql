@@ -1,4 +1,4 @@
-SELECT 
+SELECT
     DISTINCT
     employee_id,
     employee_first_name,
@@ -12,5 +12,5 @@ SELECT
     employee_is_active,
     employee_processed_at,
     CURRENT_TIMESTAMP() AS employee_gold_processed_at
-FROM 
+FROM
     {{ ref('obt_b') }}

@@ -1,4 +1,4 @@
-SELECT 
+SELECT
     DISTINCT
     customer_id,
     customer_first_name,
@@ -13,5 +13,5 @@ SELECT
     customer_is_active,
     customer_processed_at,
     CURRENT_TIMESTAMP() AS customer_gold_processed_at
-FROM 
+FROM
     {{ ref('obt_b') }}

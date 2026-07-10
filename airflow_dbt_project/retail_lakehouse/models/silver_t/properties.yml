@@ -4,15 +4,25 @@ models:
   - name: products_t
     columns:
       - name: product_id
-        data_tests: 
+        data_tests:
           - not_null
-          - unique:
-              config:
-                where: "price > 0"
+          - unique
+
+      - name: price
+        data_tests:
+          - not_null
 
   - name: orders_t
     columns:
       - name: order_id
-        data_tests: 
+        data_tests:
           - not_null
           - unique
+
+      - name: customer_id
+        data_tests:
+          - not_null
+
+      - name: store_id
+        data_tests:
+          - not_null

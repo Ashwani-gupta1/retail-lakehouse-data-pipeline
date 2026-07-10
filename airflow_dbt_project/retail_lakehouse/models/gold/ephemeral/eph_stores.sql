@@ -1,4 +1,4 @@
-SELECT 
+SELECT
     DISTINCT
     store_id,
     store_name,
@@ -10,5 +10,5 @@ SELECT
     store_is_active,
     store_processed_at,
     CURRENT_TIMESTAMP() AS store_gold_processed_at
-FROM 
+FROM
     {{ ref('obt_b') }}

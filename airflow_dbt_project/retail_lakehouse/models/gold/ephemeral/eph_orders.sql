@@ -1,7 +1,8 @@
-SELECT 
+SELECT
     DISTINCT
     order_id,
-    order_item_id,
+    customer_id,
+    store_id,
     payment_method,
     order_status,
     order_timestamp,
@@ -11,5 +12,5 @@ SELECT
     order_processed_at,
     obt_b_processed_at,
     CURRENT_TIMESTAMP() AS order_gold_processed_at
-FROM 
+FROM
     {{ ref('obt_b') }}

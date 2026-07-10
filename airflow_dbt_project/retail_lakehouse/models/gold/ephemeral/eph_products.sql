@@ -1,5 +1,4 @@
-SELECT 
-    DISTINCT
+SELECT DISTINCT
     product_id,
     product_name,
     category,
@@ -10,5 +9,4 @@ SELECT
     product_is_active,
     product_processed_at,
     CURRENT_TIMESTAMP() AS product_gold_processed_at
-FROM 
-    {{ ref('obt_b') }}
+FROM {{ ref('obt_b') }}
